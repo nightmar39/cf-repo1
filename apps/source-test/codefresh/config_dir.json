@@ -1,0 +1,1 @@
+{"appName":"source-test","userGivenName":"source-test","destNamespace":"codefresh","destServer":"https://kubernetes.default.svc","srcPath":".","srcRepoURL":"https://github.com/nightmar39/source-test.git","srcTargetRevision":"","labels":{"codefresh_io_entity":"git-source"},"exclude":"","include":""}
