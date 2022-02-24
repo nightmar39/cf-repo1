@@ -1,0 +1,1 @@
+{"appName":"source1","userGivenName":"source1","destNamespace":"codefresh","destServer":"https://kubernetes.default.svc","srcPath":".","srcRepoURL":"https://github.com/nightmar39/source1.git","srcTargetRevision":"","labels":{"codefresh_io_entity":"git-source"},"exclude":"","include":""}
