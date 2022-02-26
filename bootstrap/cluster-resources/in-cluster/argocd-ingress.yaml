@@ -10,6 +10,9 @@ metadata:
   namespace: codefresh
 spec:
   ingressClassName: nginx
+  tls:
+  - hosts:
+    - charizard.support.cf-cd.com
   rules:
   - host: charizard.support.cf-cd.com
     http:
@@ -18,6 +21,6 @@ spec:
           service:
             name: argocd-server
             port:
-              number: 80
+              number: 443
         path: /argocd(/|$)(.*)
         pathType: ImplementationSpecific
