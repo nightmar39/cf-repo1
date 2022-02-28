@@ -31,6 +31,7 @@ patchesStrategicMerge:
                   matchLabels:
                     should-be-deleted: "true"
           artifactRepository: |
+            archiveLogs: true
             s3:
               bucket: wombo227
               keyFormat: myworkflows/test     #optional
