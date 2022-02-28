@@ -34,7 +34,7 @@ patchesStrategicMerge:
             archiveLogs: true
             s3:
               bucket: wombo227
-              keyFormat: myworkflows/test/{{workflow.name}}     #optional
+              keyFormat: myworkflows/{{workflow.name}}/     #optional
               endpoint: s3.amazonaws.com        #AWS => s3.amazonaws.com; GCS => storage.googleapis.com
               insecure: true                  #omit for S3/GCS. Needed when minio runs without TLS
               accessKeySecret:                #omit if accessing via AWS IAM
