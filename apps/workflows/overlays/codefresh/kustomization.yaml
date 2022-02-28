@@ -37,8 +37,8 @@ patchesStrategicMerge:
               endpoint: s3.amazonaws.com        #AWS => s3.amazonaws.com; GCS => storage.googleapis.com
               insecure: true                  #omit for S3/GCS. Needed when minio runs without TLS
               accessKeySecret:                #omit if accessing via AWS IAM
-                name: my-minio-cred
-                key: accessKey
+                name: aws-secret
+                key: aws_access
               secretKeySecret:                #omit if accessing via AWS IAM
-                name: my-minio-cred
-                key: secretKey
+                name: aws-secret
+                key: aws_secret
