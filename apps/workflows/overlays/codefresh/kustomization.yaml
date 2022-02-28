@@ -11,3 +11,34 @@ patches:
 resources:
 - ../../base
 - ingress.yaml
+patchesStrategicMerge:
+    - |
+        apiVersion: v1
+        kind: ConfigMap
+        metadata:
+          name: workflow-controller-configmap
+        data:
+          # Fields reference can be found here: https://argoproj.github.io/argo-workflows/workflow-controller-configmap.yaml
+          workflowDefaults: |
+            spec:
+              ttlStrategy:
+                secondsAfterCompletion: 86400
+                secondsAfterSuccess: 86400
+                secondsAfterFailure: 86400
+              podGC:
+                strategy: OnWorkflowCompletion
+                labelSelector:
+                  matchLabels:
+                    should-be-deleted: "true"
+          artifactRepository: |
+            s3:
+              bucket: wombo227
+              keyFormat: myworkflows/test     #optional
+              endpoint: s3.amazonaws.com        #AWS => s3.amazonaws.com; GCS => storage.googleapis.com
+              insecure: true                  #omit for S3/GCS. Needed when minio runs without TLS
+              accessKeySecret:                #omit if accessing via AWS IAM
+                name: my-minio-cred
+                key: accessKey
+              secretKeySecret:                #omit if accessing via AWS IAM
+                name: my-minio-cred
+                key: secretKey
