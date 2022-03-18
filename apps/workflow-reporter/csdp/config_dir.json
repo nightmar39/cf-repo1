@@ -1,1 +1,0 @@
-{"appName":"workflow-reporter","userGivenName":"workflow-reporter","destNamespace":"csdp","destServer":"https://kubernetes.default.svc","srcPath":"apps/workflow-reporter/csdp/resources","srcRepoURL":"https://github.com/nightmar39/cf-repo1.git","srcTargetRevision":"","labels":{"codefresh_io_entity":"component"},"exclude":"","include":""}

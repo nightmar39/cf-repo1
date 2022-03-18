@@ -1,1 +1,0 @@
-{"appName":"rollouts","userGivenName":"rollouts","destNamespace":"csdp","destServer":"https://kubernetes.default.svc","srcPath":"apps/rollouts/overlays/csdp","srcRepoURL":"https://github.com/nightmar39/cf-repo1.git","srcTargetRevision":"","labels":{"codefresh_io_entity":"component"}}
