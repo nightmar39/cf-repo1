@@ -1,1 +1,0 @@
-{"appName":"events","userGivenName":"events","destNamespace":"csdp-april","destServer":"https://kubernetes.default.svc","srcPath":"apps/events/overlays/csdp-april","srcRepoURL":"https://github.com/nightmar39/cf-repo1.git","srcTargetRevision":"","labels":{"codefresh_io_entity":"component","codefresh_io_internal":"true"}}
