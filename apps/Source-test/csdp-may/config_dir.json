@@ -1,0 +1,15 @@
+{
+  "appName": "Source-test",
+  "userGivenName": "Source-test",
+  "destNamespace": "csdp-may-source",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "/CSDP",
+  "srcRepoURL": "https://github.com/nightmar39/source-test.git",
+  "srcTargetRevision": "CSDP",
+  "labels": {
+    "codefresh_io_entity": "git-source",
+    "codefresh_io_internal": "false"
+  },
+  "exclude": "",
+  "include": ""
+}
